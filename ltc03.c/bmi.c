@@ -7,7 +7,7 @@ float calcbmi(float W, float H){
 }
 
 int main(){
-  printf("\n\nThis program gonna pretends to be aware of Body Mass Index formula and its meaning.\n");
+  printf("\n\nThis program is going to pretend to be aware of Body Mass Index formula and its meaning.\n");
   float W,H;
   printf("Enter your weight in kg: ");
   scanf("%f",&W);
