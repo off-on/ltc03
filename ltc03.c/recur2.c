@@ -1,7 +1,8 @@
 #include "stdio.h"
 
 void loop(int count) {
-   printf("\n%d bottles of beer on the wall, %d bottles of beer.",count,count);
+   char  s[]="s"; // plural s gonna be excluded once by shifting array index to non-existant character index
+   printf("\n%d bottle%c of beer on the wall, %d bottle%c of beer.",count,((count == 1)?s[-1]:s[0]),count,((count == 1)?s[-1]:s[0]));
    printf("\nTake one down, pass it around, ");
    if ( count==1 ) {
      printf("no more bottles of beer on the wall...");
